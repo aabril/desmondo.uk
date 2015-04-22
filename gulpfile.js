@@ -3,8 +3,8 @@ var gutil        = require('gulp-util');
 var browserSync  = require('browser-sync');
 var gulprm       = require('gulp-rm');
 
-gulp.task('browserSync', function() {
-    browserSync({
+gulp.task('server', function() {
+    browserSync('dist/*', {
         server: { baseDir: "dist/" },
         options: { reloadDelay: 250 },
         notify: false
@@ -12,7 +12,7 @@ gulp.task('browserSync', function() {
 });
 
 gulp.task('html', function() {
-  return gulp.src('src/*.html').pipe(browserSync.reload({stream: true})).on('error', gutil.log);
+  return gulp.src('dist/*.html').pipe(browserSync.reload({stream: true})).on('error', gutil.log);
 });
 
 gulp.task('clean', function() {
@@ -23,8 +23,8 @@ gulp.task('dist:init', function(){
   return gulp.src('src/*').pipe(gulp.dest('dist'));
 });
 
-gulp.task('default', ['browserSync'], function() {
-    gulp.watch('src/*.html', ['html']);
+gulp.task('default', function() {
+    gulp.watch('src/*.html', ['dist:init', 'server']);
 });
 
 // ToDo: https://www.npmjs.com/package/mkdirp
