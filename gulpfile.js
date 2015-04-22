@@ -1,7 +1,7 @@
 var gulp         = require('gulp');
 var gutil        = require('gulp-util');
 var browserSync  = require('browser-sync');
-var gulprm = require( 'gulp-rm' )
+var gulprm       = require('gulp-rm');
 
 gulp.task('browserSync', function() {
     browserSync({
@@ -16,12 +16,16 @@ gulp.task('html', function() {
 });
 
 gulp.task('clean', function() {
-  return gulp.src( 'dist', { read: false }).pipe( gulprm() )
+  return gulp.src( 'dist/*', { read: false }).pipe( gulprm() )
+});
+
+gulp.task('dist:init', function(){
+  return gulp.src('src/*').pipe(gulp.dest('dist'));
 });
 
 gulp.task('default', ['browserSync'], function() {
     gulp.watch('src/*.html', ['html']);
 });
 
-// ToDo: https://www.npmjs.com/package/mkdirp 
+// ToDo: https://www.npmjs.com/package/mkdirp
 // mkdirp 'dist/' , in case gulp creators/compilers does not make it for you
