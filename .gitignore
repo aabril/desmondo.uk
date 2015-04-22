@@ -1,0 +1,8 @@
+# node
+node_modules
+
+# macosx
+.DS_Store
+
+# generated folder (should I make git ignore it? I guess so)
+dist

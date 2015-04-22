@@ -1,0 +1,12 @@
+{
+  "name": "desmondo.uk",
+  "version": "0.0.1",
+  "description": "desmondo.uk is Albert Abril's personal website",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.6.4",
+    "gulp": "^3.8.11",
+    "gulp-rm": "^1.0.0",
+    "gulp-util": "^3.0.4"
+  }
+}
