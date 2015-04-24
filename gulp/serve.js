@@ -1,22 +1,11 @@
 var browserSync = require('browser-sync');
 
-module.exports = {
-  dev: function () {
+module.exports = function () {
     browserSync({
       port: 3000,
       notify: false,
       server: {
-        baseDir: ['src', './']
+        baseDir: ['dist']
       }
     });
-  },
-  dist: function () {
-    browserSync({
-      port: 3000,
-      notify: false,
-      server: {
-        baseDir: ['dist', './']
-      }
-    });
-  }
 };
