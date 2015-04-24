@@ -7,6 +7,7 @@
     "browser-sync": "^2.6.4",
     "gulp": "^3.8.11",
     "gulp-rm": "^1.0.0",
-    "gulp-util": "^3.0.4"
+    "gulp-util": "^3.0.4",
+    "require-dir": "^0.3.0"
   }
 }
