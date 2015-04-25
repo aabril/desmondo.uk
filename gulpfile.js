@@ -16,3 +16,5 @@ gulp.task('default', ['scaffold','serve'], function(){
 
     gulp.watch(paths, ['scaffold', browserSync.reload]);
 });
+
+// ToDo: gulp deploy via ssh/sftp to my server, reading the personal info from a config.json file
