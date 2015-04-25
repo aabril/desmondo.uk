@@ -1,0 +1,41 @@
+
+body {
+  /*font-family: "Sacramento", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  background-image: url("http://www.psdgraphics.com/file/colorful-triangles-background.jpg");
+
+}
+
+
+.homebox {
+  margin-top: 25%;
+  position: relative;
+  /*display:inline-block;*/
+  overflow: hidden;
+
+}
+
+.homebox_blurbg {
+   background: rgba(255, 255, 255, 0.60);
+  -webkit-filter: blur(100px);
+  -moz-filter: blur(100px);
+  -ms-filter: blur(100px);
+  -o-filter: blur(100px);
+  filter: blur(100px);
+  /*margin:-1px;*/
+  /*padding:1px;*/
+  height:100%;
+  width: 100%;
+  position: absolute;
+  /*overflow: hidden.*/
+}
+
+
+
+.homebox_content {
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -ms-filter: blur(0px);
+  -o-filter: blur(0px);
+  filter: blur(0px);
+  padding: 8% 8%;
+}

@@ -1,5 +1,12 @@
 var gulp = require('gulp');
 
 module.exports = function () {
-    return gulp.src('src/*').pipe(gulp.dest('dist'));
+
+    var paths = [
+      'src/*',
+      'src/**/*',
+      'src/**/**/*'
+    ];
+
+    return gulp.src(paths).pipe(gulp.dest('dist'));
 };

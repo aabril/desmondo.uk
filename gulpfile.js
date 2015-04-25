@@ -8,5 +8,11 @@ gulp.task('clean', tasks.clean);
 gulp.task('scaffold', tasks.scaffold);
 
 gulp.task('default', ['scaffold','serve'], function(){
-    gulp.watch('./src/*.html', ['scaffold', browserSync.reload]);
+
+    var paths = [
+        './src/*.html',
+        './src/assets/css/*'
+    ];
+
+    gulp.watch(paths, ['scaffold', browserSync.reload]);
 });
