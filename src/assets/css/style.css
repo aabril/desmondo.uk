@@ -1,8 +1,8 @@
 
 body {
   /*font-family: "Sacramento", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-  background-image: url("http://www.psdgraphics.com/file/colorful-triangles-background.jpg");
-
+  /*background-image: url("http://www.psdgraphics.com/file/colorful-triangles-background.jpg");*/
+  /*background: black;*/
 }
 
 
@@ -39,3 +39,34 @@ body {
   filter: blur(0px);
   padding: 8% 8%;
 }
+
+
+.myname {
+  background: #0074D9;
+  color: hsla(208, 100%, 85%, 1.0);
+  padding: 0 1em;
+}
+
+.mynick {
+  /*background: #DDDDDD;*/
+  /*padding: 0 1em;*/
+  /*margin: 0; */
+}
+
+
+/* links.css http://mrmrs.io/links/ begin */
+a {
+  transition: color .4s;
+  color: #265C83;
+}
+
+a:link,
+a:visited { color: #265C83; }
+a:hover   { color: #7FDBFF; }
+a:active  {
+  transition: color .3s;
+  color: #007BE6;
+}
+
+.link { text-decoration: none; }
+/* links.css http://mrmrs.io/links/ finish */
