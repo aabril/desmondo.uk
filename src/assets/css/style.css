@@ -7,6 +7,8 @@ body {
 
 .container {
   position: absolute;
+  color: hsla(208, 100%, 85%, 1.0);
+
 }
 
 .homebox {
@@ -17,7 +19,7 @@ body {
 
 }
 
-.homebox_blurbg {
+.hhomebox_blurbg {
    background: rgba(255, 255, 255, 0.60);
   -webkit-filter: blur(100px);
   -moz-filter: blur(100px);
