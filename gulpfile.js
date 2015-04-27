@@ -11,7 +11,8 @@ gulp.task('default', ['scaffold','serve'], function(){
 
     var paths = [
         './src/*.html',
-        './src/assets/css/*'
+        './src/assets/css/*',
+        './src/assets/js/*'
     ];
 
     gulp.watch(paths, ['scaffold', browserSync.reload]);
