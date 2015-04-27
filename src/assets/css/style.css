@@ -2,25 +2,31 @@
 body {
   /*font-family: "Sacramento", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   /*background-image: url("http://www.psdgraphics.com/file/colorful-triangles-background.jpg");*/
-  /*background: black;*/
+  background: black;
 }
 
 .container {
   position: absolute;
-  color: hsla(208, 100%, 85%, 1.0);
+  margin-left: 4%;
+  /*color: hsla(208, 100%, 85%, 1.0);*/
 
 }
 
 .homebox {
   margin-top: 25%;
+  width: 100%;
   position: relative;
-  /*display:inline-block;*/
+  display:inline-block;
   overflow: hidden;
+  /*background-color: lavender;*/
+  background: rgba(252, 252, 252, 0.96);
+  border-radius: 0px 30px 30px 0;
 
 }
 
 .hhomebox_blurbg {
-   background: rgba(255, 255, 255, 0.60);
+   /*background: rgba(255, 255, 255, 0.60);*/
+   /*background: rgba(0, 0, 0, 0.60);*/
   -webkit-filter: blur(100px);
   -moz-filter: blur(100px);
   -ms-filter: blur(100px);
