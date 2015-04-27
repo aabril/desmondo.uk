@@ -15,6 +15,13 @@ var init = function () {
     material = new THREE.MeshBasicMaterial( { color: 0xDDA0DD, wireframe: true, wireframeLinewidth: 3 } );
     mesh = new THREE.Mesh( geometry, material );
     scene.add( mesh );
+
+		composer = new THREE.EffectComposer( renderer );
+		composer.addPass( new THREE.RenderPass( scene, camera ) );
+
+		glitchPass = new THREE.GlitchPass();
+		glitchPass.renderToScreen = true;
+		composer.addPass( glitchPass );
 }
 
 var animate = function () {
