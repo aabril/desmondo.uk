@@ -12,7 +12,7 @@ var init = function () {
     camera.position.z = 80;
     scene = new THREE.Scene();
 
-    geometry = new THREE.SphereGeometry( 840, 1, 60 );
+    geometry = new THREE.SphereGeometry( 840, 90, 60 );
     material = new THREE.MeshBasicMaterial( { color: 0xB3DBFF, wireframe: true, wireframeLinewidth: 3 } );
 
     mesh = new THREE.Mesh( geometry, material );
@@ -21,8 +21,8 @@ var init = function () {
 
 var animate = function () {
     requestAnimationFrame( animate );
-    mesh.rotation.x = Date.now() * 0.00008;
-    mesh.rotation.y = Date.now() * 0.000010;
+    mesh.rotation.x = Date.now() * 0.00009;
+    mesh.rotation.y = Date.now() * 0.000000003;
     renderer.render( scene, camera );
 }
 
